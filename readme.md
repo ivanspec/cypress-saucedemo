@@ -3,6 +3,7 @@
 ### Requirement
 1. NodeJs v18++
 2. Cypress v14
+3. Chrome Browser
 
 ### Installation
 - Run in terminal 
