@@ -1,5 +1,7 @@
 ## Cypress
 
+[![e2e-cypress](https://github.com/ivanspec/cypress-saucedemo/actions/workflows/e2e-cypress.yml/badge.svg)](https://github.com/ivanspec/cypress-saucedemo/actions/workflows/e2e-cypress.yml)
+
 ### Requirement
 
 1. NodeJs v18++
