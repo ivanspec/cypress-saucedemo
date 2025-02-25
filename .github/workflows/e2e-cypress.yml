@@ -10,31 +10,32 @@ jobs:
   run-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-    
-    - name: install yarn
-      run : | 
-        npm install -g yarn@1.22
+      - name: Checkout branch
+        uses: actions/checkout@v4
+      
+      - name: Install Node 23
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23'
+          cache: 'npm'
+      
+      - name: install yarn
+        run : | 
+          npm install -g yarn@1.22
 
-    - name: run test
-      run : |
-        yarn test
+      - name: run test
+        run : |
+          yarn test
 
-    - name: Generate Report
-      run: |
-        yarn report
+      - name: Generate Report
+        run: |
+          yarn report
 
-    - name: Upload Artifact Report
-      if: always()
-      with:
-        name: cypress-video
-        path: reports
+      - name: Upload Artifact Report
+        if: always()
+        with:
+          name: cypress-video
+          path: reports
         
 
     
