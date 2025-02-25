@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('Login Sauce Demo', () => {
   it('User can see login page', () => {
     cy.visit('https://www.saucedemo.com/');
     cy.contains('Swag Labs');
