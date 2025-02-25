@@ -1,12 +1,11 @@
 /* eslint-disable no-unused-vars */
-export { };
+export {};
 declare global {
-    namespace Cypress {
-        interface Chainable {
-            login(username: string, password: string): Chainable<void>
-
-        }
+  namespace Cypress {
+    interface Chainable {
+      login(username: string, password: string): Chainable<void>;
     }
+  }
 }
 
 // @ts-ignore
