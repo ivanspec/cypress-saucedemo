@@ -25,6 +25,6 @@
     "lint": "eslint ./cypress/e2e/*.ts",
     "format": "prettier . --write",
     "open": "cypress open",
-    "run": "cypress run"
+    "test": "cypress run"
   }
 }
