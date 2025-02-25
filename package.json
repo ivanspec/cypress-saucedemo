@@ -14,11 +14,12 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-cypress": "^4.1.0",
     "eslint-plugin-prettier": "^5.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.25.0",
-    "@typescript-eslint/parser": "^8.25.0"
+    "prettier": "^3.5.2"
   },
   "scripts": {
     "lint": "eslint ./cypress/e2e/*.ts",
