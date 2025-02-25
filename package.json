@@ -1,0 +1,29 @@
+{
+  "name": "cypress-saucedemo",
+  "version": "1.0.0",
+  "description": "Example automation web sauce demo",
+  "repository": "https://github.com/ivanspec/cypress-saucedemo.git",
+  "author": "ivanspec",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^14.0.3",
+    "cypress-multi-reporters": "^2.0.5",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-cypress": "^4.1.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0"
+  },
+  "scripts": {
+    "lint": "eslint ./cypress/e2e/*.ts",
+    "format": "prettier . --write",
+    "open": "cypress open",
+    "run": "cypress run"
+  }
+}
